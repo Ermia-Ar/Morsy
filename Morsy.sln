@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Morsy", "Morsy\Morsy.csproj", "{0B068922-D021-4B4E-9660-E6701502D7B7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Morst.Test", "Morst.Test\Morst.Test.csproj", "{FECC368E-5735-4D45-8D8C-6B8CDA8A970A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0B068922-D021-4B4E-9660-E6701502D7B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0B068922-D021-4B4E-9660-E6701502D7B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0B068922-D021-4B4E-9660-E6701502D7B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0B068922-D021-4B4E-9660-E6701502D7B7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FECC368E-5735-4D45-8D8C-6B8CDA8A970A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FECC368E-5735-4D45-8D8C-6B8CDA8A970A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FECC368E-5735-4D45-8D8C-6B8CDA8A970A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FECC368E-5735-4D45-8D8C-6B8CDA8A970A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
