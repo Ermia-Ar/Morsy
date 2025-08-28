@@ -1,7 +1,6 @@
 using System.Net.Http.Headers;
 using System.Net.Http.Json;
 using System.Text.Json;
-using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Options;
 using Morsy.Abstractions.Dtos;
 using Morsy.Abstractions.Services;
@@ -15,7 +14,7 @@ public class SmsServices : ISmsServices
     private readonly HttpClient _httpClient ;
 
 
-    public SmsServices(HttpClient client, IConfiguration configuration,  IOptions<SmsServiceOptions> options)
+    public SmsServices(HttpClient client, IOptions<SmsServiceOptions> options)
     {
         client.BaseAddress = new Uri("https://api.limosms.com/api/");
         client.DefaultRequestHeaders.Accept.Clear();
