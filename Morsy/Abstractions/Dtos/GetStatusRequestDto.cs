@@ -1,6 +1,5 @@
 namespace Morsy.Abstractions.Dtos;
 
-public class GetStatusRequestDto
-{
-    public List<string> MessageIds { get; set; }
-}
+public record GetStatusRequestDto(
+    List<string> MessageIds
+);

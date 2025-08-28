@@ -1,10 +1,9 @@
 namespace Morsy.Abstractions.Dtos;
 
-public class SendP2PRequestDto
-{
-    public string SenderNumber { get; set; } = null!;
-    public List<string> MobileNumber;
-    public List<string> Message;
-    public bool SendToBlocksNumber;
-    public TimeSpan? SendAfter;
-}
+public class SendP2PRequestDto(
+    string SenderNumber ,
+    List<string> MobileNumber,
+    List<string> Message,
+    bool SendToBlocksNumber,
+    double? SendAfter
+    );

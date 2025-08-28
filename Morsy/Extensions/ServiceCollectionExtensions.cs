@@ -13,7 +13,7 @@ public static class ServiceCollectionExtensions
         services.Configure(configureOptions);
 
         services.AddHttpClient<ISmsServices, SmsServices>();
-
+        
         return services;
     }
 }

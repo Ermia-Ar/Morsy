@@ -20,8 +20,7 @@ public class SmsServices : ISmsServices
         client.BaseAddress = new Uri("https://api.limosms.com/api/");
         client.DefaultRequestHeaders.Accept.Clear();
         client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
-        if (options.Value.ApiKey == null)
-            throw new NullApiTokenException();
+       
         client.DefaultRequestHeaders.Add("ApiKey", options.Value.ApiKey);
         _httpClient = client;
     }
