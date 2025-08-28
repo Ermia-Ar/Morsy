@@ -1,6 +1,6 @@
 namespace Morsy.Abstractions.Dtos;
 
-public class SendPatternRequestDto(
+public record SendPatternRequestDto(
     long OtpId, 
     string MobileNumber ,
     List<object> ReplaceToken

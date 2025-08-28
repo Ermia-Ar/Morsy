@@ -1,6 +1,6 @@
 namespace Morsy.Abstractions.Dtos;
 
-public class SendSmsRequestDto(
+public record SendSmsRequestDto(
     string SenderNumber ,
     List<string> MobileNumber  ,
     string Message ,
