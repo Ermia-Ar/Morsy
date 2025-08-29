@@ -1,4 +1,4 @@
-namespace Morsy.Core.options;
+namespace Morsy.Common.options;
 
 public class SmsServiceOptions
 {

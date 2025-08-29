@@ -1,30 +1,15 @@
-using System.Net.Http.Headers;
 using System.Net.Http.Json;
 using System.Text.Json;
-using Microsoft.Extensions.Options;
 using Morsy.Abstractions.Dtos;
 using Morsy.Abstractions.Services;
-using Morsy.Core.Exceptions;
-using Morsy.Core.options;
 
 namespace Morsy.Implementations.Services;
 
-public class SmsServices : ISmsServices
+public class SmsServices(IHttpClientFactory httpClientFactory) : ISmsServices
 {
-    private readonly HttpClient _httpClient ;
+    private readonly HttpClient _httpClient = httpClientFactory.CreateClient("LimoSms");
 
 
-    public SmsServices(HttpClient client, IOptions<SmsServiceOptions> options)
-    {
-        client.BaseAddress = new Uri("https://api.limosms.com/api/");
-        client.DefaultRequestHeaders.Accept.Clear();
-        client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
-        if (options.Value.ApiKey == null)
-            throw new NullApiTokenException();
-        client.DefaultRequestHeaders.Add("ApiKey", options.Value.ApiKey);
-        _httpClient = client;
-    }
-    
     public async Task<SendSmsResponseDto> SendSmsAsync(SendSmsRequestDto request, CancellationToken token = default)
     {
         var response = await _httpClient.PostAsJsonAsync("sendsms", request, token);
