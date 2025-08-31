@@ -15,7 +15,7 @@ public interface ISmsServices
         List<string> mobileNumber,
         List<string> message,
         bool sendToBlocksNumber,
-        double? sendAfter,
+        double? sendTimeSpan,
         CancellationToken token = default);
     
     Task<SendPatternResponseDto> SendPatternAsync(
