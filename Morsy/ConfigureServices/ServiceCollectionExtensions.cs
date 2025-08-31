@@ -3,7 +3,7 @@ namespace Morsy.ConfigureServices;
 public static class ServiceCollectionExtensions
 {
     public static IServiceCollection AddSmsService(this IServiceCollection services,
-        Action<SmsServiceOptions> configureOptions,  ConfigurationManager configuration)
+        Action<SmsServiceOptions> configureOptions)
     {
         services.Configure(configureOptions);
         
