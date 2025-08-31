@@ -1,5 +1,3 @@
-using System.Text.Json.Serialization;
-
 namespace Morsy.Abstractions.Dtos;
 
 public class GetCreditDto

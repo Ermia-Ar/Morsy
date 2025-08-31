@@ -1,5 +1,3 @@
-using Morsy.Abstractions.Dtos;
-
 namespace Morsy.Abstractions.Services;
 
 public interface ISmsServices
