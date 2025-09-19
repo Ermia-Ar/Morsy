@@ -5,5 +5,5 @@ public record SendP2PRequestDto(
     List<string> MobileNumber,
     List<string> Message,
     bool SendToBlocksNumber,
-    double? SendAfter
+    double? SendTimeSpan
     );
