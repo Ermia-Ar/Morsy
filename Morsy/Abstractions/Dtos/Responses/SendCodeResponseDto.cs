@@ -1,4 +1,4 @@
-namespace Morsy.Abstractions.Dtos;
+namespace Morsy.Abstractions.Dtos.Responses;
 
 public record SendCodeResponseDto(
     bool Success,

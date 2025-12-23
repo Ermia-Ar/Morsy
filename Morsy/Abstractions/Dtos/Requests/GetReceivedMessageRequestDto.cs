@@ -1,4 +1,4 @@
-namespace Morsy.Abstractions.Dtos;
+namespace Morsy.Abstractions.Dtos.Requests;
 
 public record GetReceivedMessageRequestDto(
     string Number,

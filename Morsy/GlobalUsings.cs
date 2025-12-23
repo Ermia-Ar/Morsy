@@ -1,8 +1,4 @@
-global using System.Net.Http.Headers;
-global using System.Net.Http.Json;
 global using System.Text.Json;
-global using System.Text.Json.Serialization;
-global using Microsoft.Extensions.Configuration;
 global using Microsoft.Extensions.DependencyInjection;
 global using Microsoft.Extensions.Options;
 global using Morsy.Abstractions.Dtos;
@@ -10,3 +6,6 @@ global using Morsy.Abstractions.Services;
 global using Morsy.Common.Exceptions;
 global using Morsy.Common.options;
 global using Morsy.Implementations.Services;
+global using System.Text;
+global using Morsy.Common.Helper;
+global using Morsy.Abstractions.Dtos.Responses;
